@@ -1,0 +1,50 @@
+Ministrante
+    -> id
+    -> nome
+    -> email
+    -> formacao
+    -> idade
+    -> created_at
+    -> updated_at
+
+Areas
+    -> id
+    -> nome
+    -> descricao
+    -> created_at
+    -> updated_at
+
+Palestras
+    -> id
+    -> titulo
+    -> descricao
+    -> data
+    -> hora_inicio
+    -> hora_fim
+    -> local
+
+    -> id_ministrante
+    -> id_area
+
+Cursos
+    -> id
+    -> titulo
+    -> descricao
+    -> data_inicio
+    -> data_fim
+    -> local
+    -> quantidade_votos
+    -> carga_horaria
+    -> nota
+
+    -> id_ministrante
+    -> id_area
+
+
+
+
+
+php artisan make:model Models\Ministrante -m
+php artisan make:model Models\Area -m
+php artisan make:model Models\Palestra -m
+php artisan make:model Models\Curso -m
